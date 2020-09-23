@@ -159,6 +159,14 @@ footer {
     margin-bottom: 2rem;
   }
 
+  .gravel .btn {
+    margin-top: 3rem;
+  }
+
+  .symbolism .btn {
+    margin-top: 3rem;
+  }
+
   .btn {
     margin-bottom: 1rem;
   }
@@ -199,5 +207,32 @@ footer {
     grid-column: 3;
     grid-row: 1 / 3;
   } */
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  header {
+    font-size: 110%;
+    line-height: 1.5;
+  }
+
+  section {
+    max-width: 30em;
+    align-items: center;
+    margin: 1rem 16rem;
+  }
+
+  .viewing .btn {
+    margin-top: 1rem;
+  }
+
+  .gravel .btn {
+    margin-top: 1rem;
+  }
+
+  .symbolism .btn {
+    margin-top: 1rem;
+  }
 
 }
