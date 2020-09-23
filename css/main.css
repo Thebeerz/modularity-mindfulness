@@ -10,9 +10,8 @@ html {
   text-size-adjust: 100%;
   font-family: "Noto Sans", sans-serif;
   line-height: 1.5;
-  margin: 1.5rem;
+  margin: 1rem;
   margin-top: 0;
-  max-width: 30em;
 }
 
 *,
@@ -33,6 +32,7 @@ body {
 img {
   display: block;
   width: 100%;
+  margin-top: 1rem;
 }
 
 header {
@@ -55,13 +55,14 @@ h1 {
 .banner {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 1.5rem;
+  margin: 1rem 0 1.5rem;
 }
 
 ul {
   display: flex;
-  padding: 0 0 1rem;
+  justify-content: center;
   margin: 0;
+  padding: 0;
 }
 
 li {
@@ -70,32 +71,30 @@ li {
 }
 
 a {
-  margin: 1rem;
+  margin: 0 .5rem;
   color: #3783a3;
 }
 
 section {
   text-align: center;
-  margin: 1.5rem 0 0;
+  margin: 0 1rem 2rem;
 }
 
 section h2 {
   font-weight: normal;
   font-size: 2rem;
-  margin-bottom: 0;
-}
-
-.viewing-img {
-  margin-top: 1.5rem;
+  margin: 0;
 }
 
 hr {
   border: 2px solid #e2e2e2;
+  max-width: 30em;
 }
 
 figcaption p {
   font-weight: normal;
-  font-size: .9rem;
+  font-size: 1rem;
+  margin: 1.5rem 0;
 }
 
 figure {
@@ -121,6 +120,7 @@ figure {
   border: .2rem solid #3783a3;
   border-radius: .3rem;
   padding: .5em 1em .6em;
+  margin: 0;
 }
 
 figcaption a {
@@ -129,29 +129,57 @@ figcaption a {
 }
 
 footer {
+  margin-top: 1rem;
   text-align: center;
 }
 
 @media only screen and (min-width: 38em) {
 
-  nav {
-    display: grid;
-    grid-column: 2;
-    grid-row: 1;
-    gap: 1rem;
+  html {
+    font-size: 100%;
+    line-height: 1.5;
   }
 
-  .logo {
-    grid-column: 1 / -1;
-    grid-row: 1 / 2;
+  h1 {
+    margin-top: .7rem;
+    font-weight: 600;
   }
 
   article {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
   }
 
-  .viewing {
+  section {
+    margin: 1rem 3.5rem;
+  }
+
+  section p {
+    margin-bottom: 2rem;
+  }
+
+  .btn {
+    margin-bottom: 1rem;
+  }
+
+  nav {
+    display: grid;
+    grid-column: 2;
+    grid-row: 1;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  .logo {
+    display: grid;
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    justify-content: flex-start;
+  }
+
+  /* .viewing {
     display: grid;
     grid-area: viewing;
     grid-column: 1;
@@ -170,6 +198,6 @@ footer {
     grid-area: symbolism;
     grid-column: 3;
     grid-row: 1 / 3;
-  }
+  } */
 
 }
